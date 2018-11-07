@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+
+int a,b,i;
+
+printf("ilk sayiyi girin:"); scanf("%d",&a);
+printf("ikinci sayiyi girin:"); scanf("%d",&b);
+printf("1)toplama\n2)cikarma\n3)carpma\n4)bolme\n5)mod"); scanf("%d",&i);
+
+switch(i) {
+
+printf("islemi secin (1-5) "); scanf("%d",&i);
+case 1: printf("sayilarin toplami:%d\n", a+b); break;
+case 2: printf("sayilarin cikarilmasi:%d\n", a-b); break;
+case 3: printf("sayilarin carpmasi:%d\n", a*b); break;
+case 4: printf("sayilarin bolmesi:%d\n", a/b); break;
+case 5: printf("sayilarin mod:%d\n", a%b); break;
+default: printf("yanlis islem"); break;
+ 
+ 
+}
+
+return 0;
+
+}
